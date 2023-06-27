@@ -1,0 +1,92 @@
+$color-white: #FFFFFF
+$color-black: #000000
+$color-yellow: #EFC449
+$color-blue-dark: #010F29
+$color-gray-light: #E9F1FF
+
+$liner-gradient-red: linear-gradient(111.1deg, #EAA853 3.17%, #994960 63.62%)
+$liner-gradient-orange: linear-gradient(143.05deg, #EAA853 20.13%, #984860 85.02%)
+$liner-gradient-blue: linear-gradient(225deg, #32C5FF 0%, #B620E0 51.26%, #F7B500 100%)
+$liner-gradient-dark-blue: linear-gradient(138.91deg, #0015B1 23.29%, #C302D5 88.99%)
+
+$delay: 0.015s
+$duration: 0.6s
+$easing: cubic-bezier(0.76, 0, 0.24, 1)
+
+@font-face
+    font-family: "Akrobat", sans-serif
+    src: url("../fonts/akrobat-regular.woff") format("woff"),
+    src: url("../fonts/akrobat-regular.woff2") format("woff2"),
+    src: url("../fonts/akrobat-regular.ttf") format("ttf")
+    font-weight: 500
+    font-style: normal
+
+@font-face
+    font-family: "Akrobat", sans-serif
+    src: url("../fonts/akrobat-bold.woff") format("woff"),
+    src: url("../fonts/akrobat-bold.woff2") format("woff2"),
+    src: url("../fonts/akrobat-bold.ttf") format("ttf")
+    font-weight: 700
+
+@font-face
+    font-family: "Akrobat", sans-serif
+    src: url("../fonts/akrobat-extrabold.woff") format("woff"),
+    src: url("../fonts/akrobat-extrabold.woff2") format("woff2"),
+    src: url("../fonts/akrobat-extrabold.ttf") format("ttf")
+    font-weight: 800
+
+@font-face
+    font-family: "Akrobat", sans-serif
+    src: url("../fonts/akrobat-semibold.woff") format("woff"),
+    src: url("../fonts/akrobat-semibold.woff2") format("woff2"),
+    font-weight: 600
+
+@keyframes wipe-enter
+    0%
+        transform: scale(0, .025)
+
+    50%
+        transform: scale(1, .025)
+
+*, ::after, ::before
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+html
+    font-size: 62.5%
+    font-stretch: ultra-condensed
+    scroll-behavior: smooth
+
+body
+    font-family: 'Akrobat', sans-serif
+    font-size: 2rem
+    background-color: $color-blue-dark
+    color: $color-white
+    vertical-align: baseline
+    border: 0 none
+    outline: 0
+    padding: 0
+    margin: 0 auto
+    -webkit-appearance: none
+    place-items: center
+    width: 100%
+
+.container
+    width: 104.1rem
+    margin: 0 auto
+    position: relative
+
+.container-big
+    width: 121.332rem
+    margin: 0 auto
+    position: relative
+
+.container-second
+    width: 104.1rem
+    margin: 0 auto
+    position: relative
+a
+    text-decoration: none
+    color: $color-gray-light
+    text-decoration: underline

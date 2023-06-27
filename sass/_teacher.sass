@@ -1,0 +1,41 @@
+.teacher
+  margin-bottom: 10.8rem
+
+.teacher-block
+  width: 100%
+  padding: 7.3rem 9.5rem 4.2rem 4.4rem
+  display: flex
+  flex-direction: row
+  border: .1rem solid $color-white
+  justify-content: space-evenly
+
+.teacher-block-name
+  display: flex
+  flex-direction: row
+  width: 50%
+  justify-content: space-around
+  & span
+    font-weight: 700
+
+  img
+    width: 145px
+    height: 145px
+    transition: transform 0.3s ease
+    transform-origin: center center
+
+  &:hover img
+    animation: rotate-scale 3s ease-in-out infinite
+    transform: scale(1.2)
+
+@keyframes rotate-scale
+  0%
+    transform: scale(1)
+
+  50%
+    transform: scale(1.2)
+
+  100%
+    transform: scale(1.1)
+
+.teacher-text
+  width: 40rem

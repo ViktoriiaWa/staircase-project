@@ -1,0 +1,31 @@
+.channels
+  width: 100%
+  margin-bottom: 14rem
+
+.channels-boxes
+  display: grid
+  grid-template-columns: repeat(auto-fit, 16rem)
+  padding-left: 1rem
+
+.partners-more
+  grid-column: 3/-1
+
+.anim-text-flow
+  display: inline-block
+  background: $liner-gradient-blue
+  background-clip: text
+  -webkit-background-clip: text
+  color: transparent
+  animation: anim-text-flow-keys 10s ease-in-out infinite
+
+@keyframes anim-text-flow-keys
+  0%
+    color: #EAA853
+  25%
+    color: #994960
+  50%
+    color: #32C5FF
+  75%
+    color: #994960
+  100%
+    color: #EAA853

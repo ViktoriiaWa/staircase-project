@@ -1,0 +1,32 @@
+.btn
+  background: linear-gradient(143.05deg, #FCA82D 20.13%, #EFC449 85.02%)
+  border-radius: 3.05rem
+  width: 20rem
+  height: 6.1rem
+  font-weight: 700
+  font-size: 1.6rem
+  line-height: 200%
+  text-transform: uppercase
+  color: $color-blue-dark
+  cursor: pointer
+  transition: all 0.3s ease
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: center
+  outline: none
+  animation: animate_reduce 2s infinite
+  text-decoration: none
+  border: none
+  &:hover
+    animation: none
+
+@keyframes animate_reduce
+  0%
+    transform: scale3d(1, 1, 1)
+
+  50%
+    transform: scale3d(0.95, 0.95, 0.95)
+
+  100%
+    transform: scale3d(1, 1, 1)
